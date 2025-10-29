@@ -118,7 +118,7 @@ const AboutPage = () => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
     const storedCertificates = JSON.parse(localStorage.getItem("certificates") || "[]");
     
-    const startDate = new Date("2021-11-06");
+    const startDate = new Date("2023-08-27");
     const today = new Date();
     const experience = today.getFullYear() - startDate.getFullYear() -
       (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
@@ -205,7 +205,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Eki Zulfar Rachman
+                Dhruv Panchal
               </span>
             </h2>
             
@@ -214,7 +214,10 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-             Seorang lulusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki ketertarikan besar dalam pengembangan Front-End. Saya berfokus pada menciptakan pengalaman digital yang menarik dan selalu berusaha memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.
+              a Thrid Year Computer Engineering student at VJTI, passionate about turning ideas into interactive digital experiences.
+I love designing and developing modern web applications that blend creativity with clean, efficient code. My interests lie in web development, AI/ML, and product design, and I’m driven by the goal of building solutions that make technology smarter, faster, and more human.
+<br></br>
+Beyond the screen, I’m a huge cricket enthusiast and a regular at the gym, where fitness keeps me focused and energized. Whether it’s pushing code or pushing limits, I believe consistency and passion make all the difference.
             </p>
 
                {/* Quote Section */}
@@ -240,7 +243,7 @@ const AboutPage = () => {
       </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href="https://drive.google.com/drive/folders/1MN7DVt3_OPavd033C39_KEfJSLPk_Lr9?usp=sharing" className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
                 data-aos-duration="800"

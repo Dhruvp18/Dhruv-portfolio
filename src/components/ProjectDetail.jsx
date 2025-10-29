@@ -61,7 +61,7 @@ const ProjectStats = ({ project }) => {
         </div>
         <div className="flex-grow">
           <div className="text-lg md:text-xl font-semibold text-blue-200">{techStackCount}</div>
-          <div className="text-[10px] md:text-xs text-gray-400">Total Teknologi</div>
+          <div className="text-[10px] md:text-xs text-gray-400">Total Technologies</div>
         </div>
       </div>
 
@@ -71,7 +71,7 @@ const ProjectStats = ({ project }) => {
         </div>
         <div className="flex-grow">
           <div className="text-lg md:text-xl font-semibold text-purple-200">{featuresCount}</div>
-          <div className="text-[10px] md:text-xs text-gray-400">Fitur Utama</div>
+          <div className="text-[10px] md:text-xs text-gray-400">Key Features</div>
         </div>
       </div>
     </div>
@@ -82,9 +82,9 @@ const handleGithubClick = (githubLink) => {
   if (githubLink === 'Private') {
     Swal.fire({
       icon: 'info',
-      title: 'Source Code Private',
-      text: 'Maaf, source code untuk proyek ini bersifat privat.',
-      confirmButtonText: 'Mengerti',
+      title: 'Private Source Code',
+      text: 'Sorry, the source code for this project is private.',
+      confirmButtonText: 'Understood',
       confirmButtonColor: '#3085d6',
       background: '#030014',
       color: '#ffffff'
@@ -110,7 +110,7 @@ const ProjectDetails = () => {
         ...selectedProject,
         Features: selectedProject.Features || [],
         TechStack: selectedProject.TechStack || [],
-        Github: selectedProject.Github || 'https://github.com/EkiZR',
+        Github: selectedProject.Github || 'https://github.com/Dhruvp18',
       };
       setProject(enhancedProject);
     }
@@ -129,7 +129,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="min-h-screen bg-[#030014] px-[2%] sm:px-0 relative overflow-hidden">
-      {/* Background animations remain unchanged */}
+      {/* Background animations */}
       <div className="fixed inset-0">
         <div className="absolute -inset-[10px] opacity-20">
           <div className="absolute top-0 -left-4 w-72 md:w-96 h-72 md:h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" />
@@ -198,7 +198,7 @@ const ProjectDetails = () => {
                 >
                   <div className="absolute inset-0 translate-y-[100%] bg-gradient-to-r from-purple-600/10 to-pink-600/10 transition-transform duration-300 group-hover:translate-y-[0%]" />
                   <Github className="relative w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform" />
-                  <span className="relative font-medium">Github</span>
+                  <span className="relative font-medium">GitHub</span>
                 </a>
               </div>
 
@@ -221,18 +221,17 @@ const ProjectDetails = () => {
 
             <div className="space-y-6 md:space-y-10 animate-slideInRight">
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
-              
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <img
                   src={project.Img}
                   alt={project.Title}
-                  className="w-full  object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105"
+                  className="w-full object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105"
                   onLoad={() => setIsImageLoaded(true)}
                 />
                 <div className="absolute inset-0 border-2 border-white/0 group-hover:border-white/10 transition-colors duration-300 rounded-2xl" />
               </div>
 
-              {/* Fitur Utama */}
+              {/* Key Features */}
               <div className="bg-white/[0.02] backdrop-blur-xl rounded-2xl p-8 border border-white/10 space-y-6 hover:border-white/20 transition-colors duration-300 group">
                 <h3 className="text-xl font-semibold text-white/90 flex items-center gap-3">
                   <Star className="w-5 h-5 text-yellow-400 group-hover:rotate-[20deg] transition-transform duration-300" />
