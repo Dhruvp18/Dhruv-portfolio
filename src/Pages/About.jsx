@@ -2,6 +2,7 @@ import React, { useEffect, memo, useMemo } from "react"
 import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles, UserCheck } from "lucide-react"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import EducationTimeline from "./EducationTimeline"
 
 // Memoized Components
 const Header = memo(() => (
@@ -275,6 +276,11 @@ Beyond the screen, I’m a huge cricket enthusiast and a regular at the gym, whe
           </div>
         </a>
       </div>
+      
+      {/* Education Section */}
+      <div className="mt-24" data-aos="fade-up" data-aos-duration="1000">
+        <EducationTimeline />
+      </div>
 
       <style jsx>{`
         @keyframes float {
@@ -295,6 +301,7 @@ Beyond the screen, I’m a huge cricket enthusiast and a regular at the gym, whe
         }
       `}</style>
     </div>
+    
   );
 };
 
