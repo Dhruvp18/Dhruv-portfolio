@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Linkedin, Github, Instagram, ExternalLink } from "lucide-react";
+import { Linkedin, Github, Instagram, ExternalLink, Mail } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,6 +14,25 @@ const socialLinks = [
     gradient: "from-[#0A66C2] to-[#0077B5]",
   },
   {
+    name: "Mail",
+    displayName: "Gmail",
+    subText: "dhruvp2005@gmail.com",
+    icon: Mail,
+    url: "mailto:dhruvp2005@gmail.com",
+    color: "#EA4335",
+    gradient: "from-[#4285F4] via-[#EA4335] to-[#FBBC05]",
+  },
+
+  {
+    name: "GitHub",
+    displayName: "GitHub",
+    subText: "@Dhruvp18",
+    icon: Github,
+    url: "https://github.com/Dhruvp18",
+    color: "#cfcfcf",
+    gradient: "from-[#6e5494] via-[#24292e] to-[#0d1117]",
+  },
+    {
     name: "Instagram",
     displayName: "Instagram",
     subText: "@dhruv.p18_",
@@ -21,15 +40,6 @@ const socialLinks = [
     url: "https://www.instagram.com/dhruv.p18_/",
     color: "#E4405F",
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]",
-  },
-  {
-    name: "GitHub",
-    displayName: "GitHub",
-    subText: "@Dhruvp18",
-    icon: Github,
-    url: "https://github.com/Dhruvp18",
-    color: "#ffffff",
-    gradient: "from-[#333] to-[#24292e]",
   },
 ];
 
@@ -52,9 +62,9 @@ const SocialLinks = () => {
         Connect With Me
       </h3>
 
-      {/* Horizontal container for all links */}
+      {/* 2x2 Responsive Grid */}
       <div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-6"
         data-aos="fade-up"
         data-aos-delay="200"
       >
