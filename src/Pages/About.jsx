@@ -215,7 +215,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              a Thrid Year Computer Engineering student at VJTI, passionate about turning ideas into interactive digital experiences.
+              A Third Year Computer Engineering student at VJTI, passionate about turning ideas into interactive digital experiences.
 I love designing and developing modern web applications that blend creativity with clean, efficient code. My interests lie in web development, AI/ML, and product design, and I’m driven by the goal of building solutions that make technology smarter, faster, and more human.
 <br></br>
 Beyond the screen, I’m a huge cricket enthusiast and a regular at the gym, where fitness keeps me focused and energized. Whether it’s pushing code or pushing limits, I believe consistency and passion make all the difference.
