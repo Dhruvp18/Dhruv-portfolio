@@ -82,7 +82,7 @@ const TECH_STACK = ["React", "Javascript", "Next.js", "Tailwind","Python","C++",
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/Dhruvp18" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/dhruvpanchall/" },
-  { icon: Instagram, link: "https://www.instagram.com/dhruv.p18_/" }
+  { icon: Mail, link: "mailto:dhruvp2005@gmail.com"}
 ];
 
 const Home = () => {

@@ -104,18 +104,22 @@ function a11yProps(index) {
 
 // techStacks tetap sama
 const techStacks = [
+  { icon: "cpp.png", language: "CPP" },
+  { icon: "python.png", language: "Python" },
+
   { icon: "html.svg", language: "HTML" },
   { icon: "css.svg", language: "CSS" },
   { icon: "javascript.svg", language: "JavaScript" },
+    { icon: "typescript.webp", language: "TypeScript" },
   { icon: "tailwind.svg", language: "Tailwind CSS" },
   { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
+  { icon: "nextjs-icon.webp", language: "NextJS" },
+  { icon: "mysql.png", language: "MySql" },
+  { icon: "supabase.jpeg", language: "Supabase" },
+  { icon: "mongodb.svg", language: "Mongodb" },
+  { icon: "fastapi.png", language: "FastApi" },
   { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "github-icon.webp", language: "GitHub" },
 ];
 
 export default function FullWidthTabs() {
@@ -362,7 +366,7 @@ export default function FullWidthTabs() {
 
           <TabPanel value={value} index={2} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 gap-5">
                 {techStacks.map((stack, index) => (
                   <div
                     key={index}

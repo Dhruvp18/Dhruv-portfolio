@@ -16,7 +16,7 @@ const TypewriterEffect = ({ text }) => {
       } else {
         clearInterval(timer);
       }
-    }, 260);
+    }, 80);
     
     return () => clearInterval(timer);
   }, [text]);
@@ -50,7 +50,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       once: false,
       mirror: false,
     });
@@ -60,7 +60,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
       setTimeout(() => {
         onLoadingComplete?.();
       }, 1000);
-    }, 7000);
+    }, 3000);
     
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
@@ -71,7 +71,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
       scale: 1.1,
       filter: "blur(10px)",
       transition: {
-        duration: 0.8,
+        duration: 0.5,
         ease: "easeInOut",
         when: "beforeChildren",
         staggerChildren: 0.1
@@ -84,7 +84,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
       y: -20,
       opacity: 0,
       transition: {
-        duration: 0.4,
+        duration: 0.3,
         ease: "easeInOut"
       }
     }
@@ -149,10 +149,10 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                 className="text-center"
                 variants={childVariants}
                 data-aos="fade-up"
-                data-aos-delay="1200"
+                data-aos-delay="100"
               >
                 <a
-                  href="https://www.dhruv-panchal.vercel.app"
+                  href="https://dhruv-panchal.vercel.app"
                   className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group hover:scale-105 transition-transform duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -161,7 +161,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                   <div className="relative flex items-center gap-2 text-lg sm:text-xl md:text-2xl">
                     <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-600" />
                     <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                      <TypewriterEffect text="www.dhruv-panchal.vercel.app" />
+                      <TypewriterEffect text="dhruv-panchal.vercel.app" />
                     </span>
                   </div>
                 </a>
